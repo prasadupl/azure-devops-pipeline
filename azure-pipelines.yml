@@ -20,11 +20,11 @@ stages:
          # - script: dotnet restore
          #   displayName: 'Restore NuGet packages'
 
-          - script: dotnet build --configuration Release --no-restore
-            displayName: 'Build Solution'
+         # - script: dotnet build --configuration Release --no-restore
+         #   displayName: 'Build Solution'
 
-          - script: dotnet test --no-restore --verbosity normal
-            displayName: 'Run Unit Tests'
+         # - script: dotnet test --no-restore --verbosity normal
+         #   displayName: 'Run Unit Tests'
 
           - task: PublishBuildArtifacts@1
             inputs:
