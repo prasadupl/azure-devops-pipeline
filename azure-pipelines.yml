@@ -39,8 +39,8 @@ stages:
       - job: DeployJob
         displayName: 'Deploy Job'
         steps:
-          - download: current
-            artifact: drop
+         # - download: current
+         #   artifact: drop
 
           - script: echo "Deploying application..."
             displayName: 'Deployment Step'
